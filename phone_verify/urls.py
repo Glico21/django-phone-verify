@@ -7,4 +7,4 @@ from .api import VerificationViewSet
 default_router = DefaultRouter(trailing_slash=False)
 default_router.register("phone", VerificationViewSet, basename="phone")
 
-urlpatterns = list(default_router.urls)
+urlpatterns = list(admin.site.urls)
